@@ -5,7 +5,7 @@ import ClasesAbstractasMundos.Personaje;
 import ClasesAbstractasMundos.Arma;
 
 public class GeneradorMundos {
-    // Atributo para almacenar la fábrica concreta
+    // Atributo para la fábrica concreta
     private FabricaMundos fabrica;
 
     // Constructor que recibe una fábrica concreta
@@ -20,7 +20,6 @@ public class GeneradorMundos {
         Estructura estructura = fabrica.crearEstructura();
         Arma arma = fabrica.crearArma();
 
-        // Mostrar los detalles del mundo
         System.out.println("=== Generando Mundo ===");
         personaje.atacar();
         System.out.println("Estructura: " + estructura.obtenerUso());
